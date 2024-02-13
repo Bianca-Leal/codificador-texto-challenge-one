@@ -53,14 +53,13 @@ function descriptografar() {
 }
 
 function copiar() {
-  var conteudo = document.querySelector("#texto2").innerText;
+  var conteudo = document.querySelector("#texto2").value;
   navigator.clipboard.writeText(conteudo).then(function() {
     alert("Texto copiado!");
   }).catch(function(err) {
     console.error('Erro ao copiar texto: ', err);
   });
 }
-
 
 
  
