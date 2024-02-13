@@ -1,26 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
+
 body{
   margin: 0px;
   padding: 0px;
+  color: #64072b;
   background-image: url("assets/fundo_rosa.avif");
   background-size: cover;
   background-attachment: fixed;
 }
 
-.conteiner{
+.container{
   margin: auto;
   width: 960px;
   height: 650px;
 }
 
-.logoA{
+.logo{
   display: flex;
   align-items: center;
   width: 100%;
   float: left;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.imagem__logo {
+  margin-top:1%;
+  float: left;
+  margin-left: 5%;
+}
+
+.titulo {
+  margin-left: 3%;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .left {
@@ -30,92 +43,21 @@ body{
   border-radius: 24px;
 }
 
-.right {
-  margin-right: 7%;
-  box-shadow: 0px 24px 32px 8px;
-  width: 400px;
-  height: 944px;
-  float: right;
-  border-radius: 24px;
-  width:40%;
-  height: auto;
-}
-
-.imagemLogo {
-  margin-top:1%;
-  float: left;
-  margin-left: 5%;
-}
-
-.titulo {
-    margin-left: 3%;
-  font-family: 'Ubuntu Mono', monospace;
-}
-
-.text-input {
+.text__input {
   float: left;
   padding-bottom: 10%;
   margin-left: 2%;
   margin-top: 5%;
   width: 60%;
-  height: 80%;
+  height: auto;
   font-family: 'Ubuntu Mono', monospace;
-  color: #0A3871;
+  color: #64072b;
   font-size: 20px;
   border: 2px solid rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#imagem{
-  margin-top: 20%;
-  width: 90%;
-  height: auto;
-  margin-left: 2%;
-}
-
-#texto{
-  margin-left: 7%;
-  margin-right: 8%;
-  font-family: 'Ubuntu Mono', monospace;
-}
-
-#texto2{
-  float: left;
-  margin-left: 10%;
-  color: #0A3871;
-  width: 80%;
-  height: 20%;
-  font-family: 'Ubuntu Mono', monospace;
-   border: 2px solid rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.5);
-  font-size: 15px;
-}
-
-.texto3{
-  font-size: 15px;
-  margin: 3px;
-  font-family: 'Ubuntu Mono', monospace;
-}
-
-.alerta {
-  display: flex;
-  align-items: center;
-  float: left;
-  padding: 15px;
-  margin-left: 5%;
-  margin-right: 30%;
-  border: 2px solid rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 24px;
-  gap: 6px;
-}
-
-.imagem3 {
-  width: 16px;
-  height: 16px;
-}
-
-.leftButton {
+.left__button {
   float: left;
   width: 50%;
   height: auto;
@@ -147,9 +89,75 @@ body{
   border-radius: 24px;
   margin-left: 10%;
   font-family: 'Ubuntu Mono', monospace;
-font-weight: bold;  
+  font-weight: bold;  
   font-size: 20px;
   background-color: rgba(10, 56, 113, 0.2);
+}
+
+.alerta {
+  display: flex;
+  align-items: center;
+  float: left;
+  padding: 15px;
+  margin-left: 5%;
+  margin-right: 30%;
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  gap: 6px;
+}
+
+.imagem__alerta {
+  width: 16px;
+  height: 16px;
+}
+
+.texto__alerta {
+  font-size: 15px;
+  margin: 3px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.right {
+  float: right;
+  margin-right: 7%;
+  box-shadow: 0px 24px 32px 8px;
+  width: 50%;
+  height: auto;
+  border-radius: 24px;
+}
+
+#imagem{
+  margin-top: 20%;
+  width: 90%;
+  height: auto;
+  margin-left: 2%;
+}
+
+#imagem2{
+  margin-top: 20%;
+  width: 90%;
+  height: auto;
+  margin-left: 2%;
+  display: none;
+}
+
+#texto{
+  margin-left: 7%;
+  margin-right: 8%;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#texto2{
+  float: left;
+  margin-left: 10%;
+  color: #64072b;
+  width: 80%;
+  height: 20%;
+  font-family: 'Ubuntu Mono', monospace;
+   border: 2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
 }
 
 #copiar{
@@ -163,21 +171,33 @@ font-weight: bold;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 24px;
   display: none;
-}
-
-#imagem2{
-  margin-top: 20%;
-  width: 90%;
-  height: auto;
-  margin-left: 2%;
-  display: none;
-}
-
-footer{
-  display: flex;
-  flex-direction: column;  
-  width: 100%;
+  color: #64072b;
   font-family: 'Ubuntu Mono', monospace;
-  border: 2px solid rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;  
+}
+
+footer {
+  display: flex;
+  position: center; 
+  flex-direction: column;
+  text-align: center;    
+  font-size: 18px;
+  color: #64072b;
+  height: 3.5rem; 
+  width: 100%; 
+  bottom: 0px;
+}
+
+footer a {
+font-family: 'Ubuntu Mono', monospace;
+text-decoration: none;
+color:#64072b;
+}
+
+.redes-sociais a img {
+filter: invert(45%);
+width: 30px;
+height: 30px;
+border-radius: 100%;
+padding: 4px;
 }
