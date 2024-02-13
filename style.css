@@ -107,6 +107,10 @@ body {
   background-color: rgba(83, 5, 107, 0.5);
 }
 
+#buttonEncriptador:hover {
+  background-color: #d65998; 
+}
+
 #buttonDescriptador{
   padding: 1.5rem;
   font-size: 1.25rem;
@@ -118,6 +122,10 @@ body {
   font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;  
   background-color: rgba(83, 5, 107, 0.5);
+}
+
+#buttonDescriptador:hover {
+  background-color: #d65998; 
 }
 
 .right {
@@ -197,6 +205,10 @@ body {
   font-weight: bold;  
   margin-left: auto; /* Centraliza à esquerda */
   margin-right: auto; /* Centraliza à direita */
+}
+
+#copiar:hover {
+  background-color: #d65998; 
 }
 
 footer {
