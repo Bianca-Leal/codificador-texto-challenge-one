@@ -149,13 +149,13 @@ body {
 
 #imagem{
   margin-top: 3%;
-  width: 80%;
+  width: 50%;
   height: auto;
 }
 
 #imagem2{
   margin-top: 3%;
-  width: 80%;
+  width: 50%;
   height: auto;
   display: none;
 }
@@ -224,12 +224,4 @@ footer a {
   border-radius: 100%;
   padding: 4px;
 }
-
-@media only screen and (max-width: 824px) {
-  /* Estilos que serão aplicados quando a largura da tela for no máximo 600px */
-  body {
-    background-color: lightblue;
-  }
-}
-
 
